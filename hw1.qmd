@@ -1,0 +1,46 @@
+---
+title: "EDS 222: Homework 1"
+author: "Your Name Here"
+---
+
+## Background
+
+*(The case study in this exercise is based on simulated data.)*
+
+In this exercise we will look at the effects of pesticides on pest abundance across conventional and organic agriculture. In `data/fields.csv`, you will find data about 100,000 agricultural fields. The data include a mix of organic and conventional fields, spread across biomes and countries. In this fictional example, each country spans all three biomes. For each field, you have information about the amount of pesticides used in kg per hectare (`pesticide_kg_ha`), the fraction of nearby farms that use organic farming practices (`nearbyorg`), and the abundance of pests per hectare (`pest_abu_ha`).
+
+## Exploratory analysis
+
+Read the data into a data frame and create a figure to visualize the effects of pesticides on pest abundance.
+
+## Sampling
+
+Consider two sampling approaches: stratified and clustered random samples. Which variable, biome or country, would be a better choice for strata in a stratified random sample? Which would be a better choice for clusters in a clustered random sample? Create a figure to justify your answers.
+
+Draw a simple random sample of 1,000 fields. Use this sample for the rest of this assignment.
+
+## Modeling
+
+### Pests and pesticides
+
+You're a consultant at an environmental consultancy. Your boss asks you to estimate the relationship between pesticide use and pest abundance. Use linear regression with a single predictor to estimate the relationship using your sample.
+
+What were your coefficient estimates? Describe their meaning in plain language.
+
+A farmer with a 50 ha farm wants to reduce their pest abundance by 100 ha^-1^. The cost of pesticides is \$100 kg^-1^. Based on your model, how much would they need to increase their spending on pesticides?
+
+### Confounding variables
+
+You share your model with a colleague and they say pesticides should be much more effective at controlling pests. They suggest accounting for the differing effects of biomes on pest abundance.
+
+Fit a new model that includes biome as a predictor. How does your estimate for the pesticide coefficient change?
+
+Using your updated model, how would your answer for the farmer with the 50 ha farm change?
+
+### Competing claims
+
+You've heard conflicting reports about the effects of nearby organic farms on pest abundance. Conventional agriculture farmers say nearby organic farms yield more pests, but organic farmers say nearby organic farms reduce them.
+
+Fit a model to assess the evidence for these competing claims. The model needs to be flexible enough to allow the effect of nearby organic farms on pests to vary by the type of farm.
+
+What is the effect of nearby organic farms on conventional farms? On organic farms?
