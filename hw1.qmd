@@ -44,3 +44,7 @@ You've heard conflicting reports about the effects of nearby organic farms on pe
 Fit a model to assess the evidence for these competing claims. The model needs to be flexible enough to allow the effect of nearby organic farms on pests to vary by the type of farm.
 
 What is the effect of nearby organic farms on conventional farms? On organic farms?
+
+## Visualizing
+
+Create a figure to visualize the raw data and expected responses for the model you created in section "Competing claims".
